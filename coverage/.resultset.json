@@ -37,6 +37,10 @@
       "/Users/danielng/Desktop/S21/67373/lab5-choretracker-starter/app/models/child.rb": [
         1,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/danielng/Desktop/S21/67373/lab5-choretracker-starter/app/models/application_record.rb": [
@@ -45,8 +49,8 @@
         null
       ],
       "/Users/danielng/Desktop/S21/67373/lab5-choretracker-starter/app/models/chore.rb": [
-        0,
-        0
+        1,
+        null
       ],
       "/Users/danielng/Desktop/S21/67373/lab5-choretracker-starter/app/models/task.rb": [
         0,
@@ -304,6 +308,6 @@
         0
       ]
     },
-    "timestamp": 1612646395
+    "timestamp": 1612648002
   }
 }
