@@ -7,6 +7,14 @@ class Child < ApplicationRecord
   # Validations
   validates_presence_of :first_name
   validates_presence_of :last_name
+  
+  # Scopes
+  scope :alphabetical, -> { order("last_name, first_name") }
+  scope :active, -> { where(active: true) }
 
+  # Methods
+  def name
+    first_name + " " + last_name
+  end
 
 end
