@@ -34,4 +34,23 @@ class ChildTest < ActiveSupport::TestCase
     end
   end
 
+  context "Creating all context for points" do 
+    setup do
+      create_children
+      create_tasks
+      create_chores
+    end
+
+    teardown do
+      destroy_children
+      destroy_tasks
+      destroy_chores
+    end
+
+    should "have a method to test points gained by a child" do
+      assert_equal 4, @alex.points_earned
+      assert_equal 1, @mark.points_earned
+    end
+  end
+
 end
